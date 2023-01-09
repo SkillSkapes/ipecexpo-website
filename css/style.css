@@ -11304,58 +11304,8 @@ img{
    -webkit-line-clamp: 9;
    -webkit-box-orient: vertical;
 }
-/* :root {
-	--color-1: #000;
-	--color-2: #2a9a9f;
-	--color-3: #f1b211;
-	--color-4: #e83611;
-	--color-5: #f9002f;
-  }
-  
-  
-  .wrapper {
-	background: #fff;
-	line-height: 1;
-	min-height: 100%;
-	display: grid;
-	place-items: center;
-	min-height: calc(20vh - 10px);
-  }
-  
-  .container h1 {
-	font-family: "Exo", sans-serif;
-	font-size: 1.0vw !important;
-	font-weight: 900;
-	width:-webkit-min-content;
-	width:-moz-min-content;
-	width: max-content;
-	margin: auto;
-	text-transform: uppercase;
-	background: linear-gradient(219deg, 
-	  var(--color-1) 50%, 
-	  transparent 19%,transparent 20%, 
-	  var(--color-3) 20%, var(--color-3)  39%,
-	  transparent 39%,transparent 40%, 
-	  var(--color-3) 40%,var(--color-3) 59% ,
-	  transparent 59%,transparent 60%, 
-	  var(--color-3) 60%, var(--color-3) 79%,
-	  transparent 79%, transparent 80%, 
-	  var(--color-3) 80%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-  }
-  
-  .container {
-	padding: 1.5rem;   
-	text-align: center;
-	  radial-gradient(circle at 98% 98% ,var(--color-1) .8%,transparent  .8% ), 
-	  radial-gradient(circle at 95% 95%,var(--color-2) .45% ,transparent .45% ), 
-	  radial-gradient(circle at 94.5% 97.5%,var(--color-3) .5% ,transparent .5% ), 
-	  radial-gradient(circle at 98.5% 95.5%,var(--color-4) .25%,transparent .25% );
-	background-color: #fff;
-  } */
-  /*--------------------------------------------------------------
+
+/*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
@@ -11654,7 +11604,7 @@ img{
   }
   .container {
 	width: 75%;
-	margin: 3rem auto;
+	margin: 1rem auto;
   }
   
   .tab-slider--nav {
@@ -11732,6 +11682,30 @@ img{
 	margin-bottom: 20px;
 	text-align: center;
 	padding-top: 100px;
+  }
+  /* travel */
+.text1{
+	padding: 0px 10px 10px 10px;
+	border: 1px solid #3f4161;
+	margin: 0;
+	width: 100%;
+	height: 100%;	
+  }
+  .text1 a{
+	color: rgb(63, 65, 97);
+  }
+  .text1 a:hover{
+	color: orange;
+  }
+  /* .container{
+    padding: 15px 15px;
+  } */
+
+  /* past edition */
+  .image-box-btn{
+	background-color: #000000;
+	height:100%;
+	width: 100%;
   }
   
   
