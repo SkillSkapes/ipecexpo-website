@@ -11652,6 +11652,87 @@ img{
 	margin-top: -20px;
 	text-align: right;
   }
+  .container {
+	width: 75%;
+	margin: 3rem auto;
+  }
+  
+  .tab-slider--nav {
+	width: 100%;
+	float: left;
+	display: grid;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 30px;
+  }
+  
+  .tab-slider--tabs {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	border-radius: 35px;
+	overflow: hidden;
+	background: #fff;
+	height: 35px;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+			box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+  }
+  .tab-slider--tabs:after {
+	content: "";
+	width: 50%;
+	background: #12114a;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 250ms ease-in-out;
+	border-radius: 35px;
+  }
+  .tab-slider--tabs.slide:after {
+	left: 50%;
+  }
+  
+  .tab-slider--trigger {
+	font-size: 22px;
+	line-height: 1;
+	font-weight: 500;
+	color: #12114a;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 6px 50px 10px 80px;
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+	display: inline-block;
+	transition: color 250ms ease-in-out;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+  }
+  .tab-slider--trigger.active {
+	color: #fff;
+  }
+  
+  .tab-slider--body {
+	margin-bottom: 20px;
+  }
+  .tab-slider--body h3 {
+	font-size: 30px;
+	line-height: 1.25;
+	font-weight: 600;
+	color: #000000;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	padding-top: 100px;
+  }
   
   
   
