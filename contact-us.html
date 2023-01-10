@@ -94,10 +94,10 @@ HITEX, Hyderabad</title>
                                 <li><a href="conference.html">Conference</a></li>
                                 <li class="dropdown"><a href="#">Media & PR</a>
                                     <ul>
-                                        <li><a href="#" target="_blank">2022 Images</a></li>
+                                        <li><a href="coming-soon.html" target="_blank">2022 Images</a></li>
 										<!--<li><a href="images/HIMTEX-space-application-form.pdf" target="_blank">Space application form</a></li>-->
-										<li><a href="#" target="_blank">Video Testimonials</a></li>
-										<li><a href="#" target="_blank">PR Coverage</a></li>
+										<li><a href="coming-soon.html" target="_blank">Video Testimonials</a></li>
+										<li><a href="coming-soon.html" target="_blank">PR Coverage</a></li>
                                     </ul>
                                 </li>
                                 <li class="current"><a href="contact-us.html">Contact Us</a></li>
@@ -194,55 +194,49 @@ HITEX, Hyderabad</title>
                                           <div id="signup">   
                                             <!-- <h1>Sign Up for Free</h1> -->
                                             
-                                            <form action="/" method="post">
+                                            <form action="exhibitor-form.php" method="post">
                                             
-                                            <div class="top-row">
+                                            
+                                                <div class="field-wrap">
+                                                  <label>
+                                                    Your Name<span class="req">*</span>
+                                                  </label>
+                                                  <input type="text" required autocomplete="off" name="name"/>
+                                                </div>
+                                              
+  
+                                              <div class="field-wrap">
+                                                  <label>
+                                                    Company Name<span class="req">*</span>
+                                                  </label>
+                                                  <input type="text" required autocomplete="off" name="companyname"/>
+                                                </div>
+                                    
                                               <div class="field-wrap">
                                                 <label>
-                                                  First Name<span class="req">*</span>
+                                                  Email Address<span class="req">*</span>
                                                 </label>
-                                                <input type="text" required autocomplete="off" />
+                                                <input type="email"required autocomplete="off" name="email"/>
                                               </div>
-                                          
+                                              
                                               <div class="field-wrap">
                                                 <label>
-                                                  Last Name<span class="req">*</span>
+                                                  Contact Number<span class="req">*</span>
                                                 </label>
-                                                <input type="text"required autocomplete="off"/>
+                                                <input type="text"required autocomplete="off" name="userphone"/>
                                               </div>
-                                            </div>
-
-                                            <div class="field-wrap">
-                                                <label>
-                                                  Company Name<span class="req">*</span>
-                                                </label>
-                                                <input type="text"required autocomplete="off"/>
-                                              </div>
-                                  
-                                            <div class="field-wrap">
-                                              <label>
-                                                Email Address<span class="req">*</span>
-                                              </label>
-                                              <input type="email"required autocomplete="off"/>
-                                            </div>
+  
+                                              <div class="field-wrap">
+                                                  <label>
+                                                    Message
+                                                  </label>
+                                                  <input type="text" style="height: 50px;" name="usermessage"/>
+                                                </div>
+                                              
+                                              <button type="submit" class="button button-block" value="submit">SUBMIT</button>
+                                              
+                                              </form>
                                             
-                                            <div class="field-wrap">
-                                              <label>
-                                                Contact Number<span class="req">*</span>
-                                              </label>
-                                              <input type="number"required autocomplete="off"/>
-                                            </div>
-
-                                            <div class="field-wrap">
-                                                <label>
-                                                  Message
-                                                </label>
-                                                <input type="text" style="height: 100px;" required autocomplete="off"/>
-                                              </div>
-                                            
-                                            <button type="submit" class="button button-block"/>Get Started</button>
-                                            
-                                            </form>
                                   
                                           </div>
                                           
@@ -276,7 +270,7 @@ HITEX, Hyderabad</title>
                                         </div><!-- tab-content -->
                                         
                                   </div> 
-                                  <script src="https://smtpjs.com/v3/smtp.js"></script>
+                                  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
                                   <script>
                                     Email.send({
                                     Host : "smtp.elasticemail.com",
@@ -289,7 +283,7 @@ HITEX, Hyderabad</title>
                                     }).then(
                                     message => alert(message)
                                     );
-                                  </script>
+                                  </script> -->
                                   <!-- /form -->
 									
 								
