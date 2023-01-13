@@ -23,7 +23,6 @@ if($email!=NULL){
 }
 
 // database connection
-
     $hostname="your_hostname";
 	$username="your_dbusername";
 	$password="your_dbpassword";

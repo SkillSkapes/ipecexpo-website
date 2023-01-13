@@ -1,20 +1,16 @@
 <?php
 
 $name = $_POST['name'];
-$companyname = $_POST['companyname'];
 $email = $_POST['email'];
-$userphone = $_POST['userphone'];
 $usermessage = $_POST['usermessage'];
 $to = "geo.skillskapes@gmail.com";
-$subject = "Mail from Website";
+$subject = "Mail from Ipecexpo (contact)";
 
 $headers = "From: ".$name."\r\n".
 "CC: ";
 $txt = "You have received an email from ".$name.
 "\r\n Name: ".$name.
-"\r\n Company Name: ".$companyname.
 "\r\n E-mail: ".$email.
-"\r\n Contact Number:".$userphone.
 "\r\n Message:".$usermessage. "\r\n";
 
 
@@ -23,24 +19,22 @@ if($email!=NULL){
 }
 
 // database connection
+//     $hostname="localhost";
+// 	$username="ipecezwk_form_ow";
+// 	$password="Ipecexpo@forms1";
+// 	$dbname="ipecezwk_forms";
+// 	$usertable="ipecezwk_contact";
 
-    $hostname="your_hostname";
-	$username="your_dbusername";
-	$password="your_dbpassword";
-	$dbname="your_dbusername";
-	$usertable="your_tablename";
-
-$conn = new mysqli('localhost','id20127593_form_admin','Ipecexpo@1form','id20127593_ipec_forms');
+$conn = new mysqli('localhost', 'ipecezwk_contact_admin', 'Contact@54321', 'ipecezwk_contact_form' );
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into exhibitor(name, companyname, email, userphone, usermessage ) values(?, ?, ?, ?, ?)");
-		$stmt->bind_param("sssis", $name, $companyname, $email, $userphone, $usermessage);
+		$stmt = $conn->prepare("insert into contact(name, email, usermessage ) values(?, ?, ?)");
+		$stmt->bind_param("sss", $name, $email, $usermessage);
 		$execval = $stmt->execute();
-		// echo $execval;
-// 		$url="https://www.ipecexpo.in/thank-you.html";
-        // echo " Registration successfully...";
+// 		echo $execval;
+//         echo " Registration successfully...";
 // 		$stmt->close();
 // 		$conn->close();
         header('Location:https://www.ipecexpo.in/thank-you.html');
