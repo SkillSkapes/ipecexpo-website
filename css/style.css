@@ -781,6 +781,13 @@ img{
 	max-width:100%;
 	height:auto;	
 }
+.ima-ge{
+	display:inline-block;
+	max-width:60%;
+	height:auto;
+	margin-left: 20%;	
+}
+
 
 .pull-left{
 	float: left;
@@ -6649,7 +6656,7 @@ img{
 
 .news-section{
 	position: relative;
-	padding: 40px 0 0px;
+	padding: 10px 0 0px;
 	overflow: hidden;
 }
 
